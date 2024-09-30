@@ -1,0 +1,208 @@
+/* General Styling */
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #f0f0f0;
+    text-transform: uppercase;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background: linear-gradient(90deg, #141e30, #243b55);
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.4s;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #ff00cc;
+    border-radius: 5px;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background: linear-gradient(135deg, #030303, #0c0c0c);
+    color: #ff00cc;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('cyber-background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    animation: neonText 1.5s infinite;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #00ffff;
+    color: #0d0d0d;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s, background-color 0.4s;
+}
+
+.cta-btn:hover {
+    transform: scale(1.1);
+    background-color: #00ff88;
+}
+
+
+/* Features Section */
+
+.features {
+    padding: 60px 20px;
+    background-color: #101010;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ff00cc;
+}
+
+.feature-item {
+    margin: 20px 0;
+    color: #b3b3b3;
+}
+
+.feature-item h3 {
+    font-size: 2rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+.feature-item p {
+    font-size: 1.3rem;
+}
+
+
+/* Testimonials Section */
+
+.testimonials {
+    background: linear-gradient(135deg, #242424, #101010);
+    color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ff00cc;
+}
+
+.testimonial-item {
+    margin: 20px 0;
+}
+
+.testimonial-item blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #b3b3b3;
+}
+
+
+/* News Section */
+
+.news {
+    padding: 60px 20px;
+    background-color: #151515;
+    text-align: center;
+}
+
+.news h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #ff00cc;
+}
+
+.news ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.news ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #b3b3b3;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #0d0d0d;
+    color: #999;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Animations */
+
+@keyframes neonText {
+    0% {
+        text-shadow: 0 0 20px #ff00cc, 0 0 30px #ff00cc, 0 0 40px #ff00cc, 0 0 50px #ff00cc;
+    }
+    100% {
+        text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc, 0 0 30px #ff00cc, 0 0 40px #ff00cc;
+    }
+}

@@ -1,0 +1,53 @@
+/* Accessibility Features Page Styling */
+.accessibility-section {
+    padding: 50px 20px;
+    text-align: left;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #333;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Individual Feature Sections */
+.feature {
+    margin: 40px 0;
+}
+
+.feature h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

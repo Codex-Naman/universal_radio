@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account - Universal Programming Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product Details</a></li>
+            <li><a href="supported_radios.html">Supported Radios</a></li>
+            <li><a href="downloads.html">Software Downloads</a></li>
+            <li><a href="firmware_updates.html">Firmware Updates</a></li>
+            <li><a href="user_guides.html">User Guides</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="account.html" class="active">Account</a></li>
+        </ul>
+    </nav>
+
+    <!-- User Account Section -->
+    <section class="user-account">
+        <div class="header">
+            <h1>User Account</h1>
+            <p>Manage your account, downloads, and settings.</p>
+        </div>
+
+        <div class="account-forms">
+            <!-- Sign Up Form -->
+            <div class="sign-up">
+                <h2>Create an Account</h2>
+                <form action="register.php" method="post">
+                    <label for="signup-name">Full Name:</label>
+                    <input type="text" id="signup-name" name="name" required>
+
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="email" required>
+
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="password" required>
+
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
+            <!-- Login Form -->
+            <div class="login">
+                <h2>Already Have an Account?</h2>
+                <form action="login.php" method="post">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="email" required>
+
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="password" required>
+
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="dashboard-link">
+            <p><a href="dashboard.html">Go to Dashboard</a> to manage your kits, downloads, and support tickets.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Universal Programming Kit for Radios. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* Feedback / Suggestions Page Styling */
+.feedback-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    color: #333;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Feedback Form */
+#feedback-form {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#feedback-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#feedback-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Voting System */
+.voting-system {
+    margin: 40px 0;
+}
+
+.voting-system h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.voting-system ul {
+    list-style: none;
+    padding: 0;
+}
+
+.voting-system li {
+    margin: 15px 0;
+}
+
+.voting-system button {
+    padding: 5px 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.voting-system button:hover {
+    background-color: #218838;
+}
+
+/* User Surveys */
+.user-survey {
+    margin: 40px 0;
+}
+
+.user-survey h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.user-survey button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.user-survey button:hover {
+    background-color: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styling */
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}

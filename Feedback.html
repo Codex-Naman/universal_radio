@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback / Suggestions - Universal Programming Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product Details</a></li>
+            <li><a href="supported_radios.html">Supported Radios</a></li>
+            <li><a href="downloads.html">Software Downloads</a></li>
+            <li><a href="firmware_updates.html">Firmware Updates</a></li>
+            <li><a href="user_guides.html">User Guides</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="feedback.html" class="active">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <!-- Feedback / Suggestions Section -->
+    <section class="feedback-section">
+        <div class="header">
+            <h1>Feedback / Suggestions</h1>
+            <p>Your input is valuable to us! Please share your thoughts and suggestions.</p>
+        </div>
+
+        <!-- Feedback Form -->
+        <form id="feedback-form">
+            <h2>Submit Your Feedback</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <!-- Voting System -->
+        <div class="voting-system">
+            <h2>Vote on Proposed Features</h2>
+            <ul>
+                <li>
+                    <span>Feature A: Enhanced User Interface</span>
+                    <button onclick="vote('Feature A')">Vote</button>
+                </li>
+                <li>
+                    <span>Feature B: Additional Compatibility with More Radios</span>
+                    <button onclick="vote('Feature B')">Vote</button>
+                </li>
+                <li>
+                    <span>Feature C: Advanced Troubleshooting Tools</span>
+                    <button onclick="vote('Feature C')">Vote</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- User Surveys -->
+        <div class="user-survey">
+            <h2>User Surveys</h2>
+            <p>Participate in our periodic surveys to help us improve:</p>
+            <button onclick="location.href='survey.html'">Take Survey</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Universal Programming Kit for Radios. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Handle feedback form submission
+        document.getElementById('feedback-form').onsubmit = function(event) {
+            event.preventDefault();
+            alert("Thank you for your feedback!");
+            // Here you would normally send the feedback data to your server
+        };
+
+        // Handle voting
+        function vote(feature) {
+            alert(`Thank you for voting for ${feature}!`);
+            // Here you would normally send the vote to your server
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Universal Programming Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product Details</a></li>
+            <li><a href="supported_radios.html">Supported Radios</a></li>
+            <li><a href="downloads.html">Software Downloads</a></li>
+            <li><a href="firmware_updates.html">Firmware Updates</a></li>
+            <li><a href="user_guides.html">User Guides</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="account.html">Account</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- Blog Section -->
+    <section class="blog">
+        <div class="header">
+            <h1>Blog & News</h1>
+            <p>Stay updated with the latest news and developments in radio technology.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <input type="text" placeholder="Search articles..." id="search-input">
+            <button onclick="searchArticles()">Search</button>
+        </div>
+
+        <!-- Blog Posts -->
+        <div class="blog-posts">
+            <article class="post">
+                <h2>Latest Features of the Universal Programming Kit</h2>
+                <p class="post-date">September 28, 2024</p>
+                <p>Discover the new features of our Universal Programming Kit that enhance its functionality and compatibility with various radio models. <a href="#">Read more...</a></p>
+            </article>
+
+            <article class="post">
+                <h2>Industry Trends in Radio Communication</h2>
+                <p class="post-date">September 20, 2024</p>
+                <p>Explore the latest trends in radio communication technology and how they are shaping the industry. <a href="#">Read more...</a></p>
+            </article>
+
+            <article class="post">
+                <h2>Upcoming Firmware Updates</h2>
+                <p class="post-date">September 15, 2024</p>
+                <p>Learn about the upcoming firmware updates for the Universal Programming Kit and how they will improve performance. <a href="#">Read more...</a></p>
+            </article>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button>Previous</button>
+            <button>Next</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Universal Programming Kit for Radios. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function searchArticles() {
+            const input = document.getElementById('search-input').value;
+            // Implement search functionality here
+            alert("Searching for: " + input);
+        }
+    </script>
+
+</body>
+</html>

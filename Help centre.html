@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support / Help Center - Universal Programming Kit</title>
+    <link rel="stylesheet" href="Help centre.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Product Details</a></li>
+            <li><a href="Software Download page.css">Supported Radios</a></li>
+            <li><a href="Download centre.html">Software Downloads</a></li>
+            <li><a href="Firmware Update page.html">Firmware Updates</a></li>
+            <li><a href="User Guide.html">User Guides</a></li>
+            <li><a href="Help centre.html" class="active">Support</a></li>
+        </ul>
+    </nav>
+
+    <!-- Support / Help Center Section -->
+    <section class="support-section">
+        <div class="header">
+            <h1>Support & Help Center</h1>
+            <p>We’re here to help! Contact us, browse our FAQs, or submit a support ticket below.</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <h2>Contact Us</h2>
+            <form action="/submit_ticket" method="POST">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="issue">Issue / Question</label>
+                    <textarea id="issue" name="issue" rows="5" placeholder="Describe your issue or question" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+        </section>
+
+        <!-- Live Chat Section -->
+        <section class="live-chat-section">
+            <h2>Live Chat</h2>
+            <p>Need immediate assistance? Chat with our support team in real-time.</p>
+            <button class="chat-btn">Start Live Chat</button>
+        </section>
+
+        <!-- Support Tickets Section -->
+        <section class="support-tickets-section">
+            <h2>Track Your Support Tickets</h2>
+            <p>If you've submitted a request before, you can track the status of your support tickets below.</p>
+            <form action="/track_ticket" method="POST">
+                <div class="form-group">
+                    <label for="ticket_id">Enter Your Ticket ID</label>
+                    <input type="text" id="ticket_id" name="ticket_id" placeholder="Enter your ticket ID" required>
+                </div>
+                <button type="submit" class="submit-btn">Track Ticket</button>
+            </form>
+        </section>
+
+        <!-- Knowledge Base Section -->
+        <section class="knowledge-base-section">
+            <h2>Knowledge Base</h2>
+            <p>Browse our searchable articles and FAQs to find answers to common questions.</p>
+            <input type="text" id="search-knowledge-base" placeholder="Search for topics..." />
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3>How do I install the Universal Programming Kit software?</h3>
+                    <p>Follow our detailed <a href="software_installation_guide.pdf" target="_blank">installation guide</a> to get started.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What radios are supported?</h3>
+                    <p>Check out the full list of <a href="supported_radios.html">supported radios</a> here.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How do I update the firmware?</h3>
+                    <p>Follow the steps in our <a href="firmware_update_guide.pdf" target="_blank">firmware update guide</a>.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Universal Programming Kit for Radios. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
